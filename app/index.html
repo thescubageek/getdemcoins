@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Getdemcoins</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/getdemcoins.css">
+  </head>
+  <body>
+    <script>
+      window.GetdemcoinsENV = {{ENV}};
+      window.EmberENV = window.GetdemcoinsENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/getdemcoins.js"></script>
+    <script>
+      window.Getdemcoins = require('getdemcoins/app')['default'].create(GetdemcoinsENV.APP);
+    </script>
+  </body>
+</html>
